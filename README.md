@@ -22,5 +22,5 @@ I am expanding my Java programming knowledge everyday. I create codes to showcas
 
 1. Generic types in Java
 2. Abstract class, interfaces, and class inheritance
-3. Thread class and Multithreading
+3. Thread class, Multithreading, Runnable, and interrupting a thread by sleep.
 
