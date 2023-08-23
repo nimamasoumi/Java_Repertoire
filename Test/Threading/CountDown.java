@@ -20,14 +20,18 @@ public class CountDown implements Runnable {
     
     public void run ()
     {
-        System.out.printf("The count down thread %s has started",this.cn);
+        System.out.printf("The count down thread %s has started.\n",this.cn);
         for (int i=num;i>0;i--)
         {
-            System.out.printf("The counter #%s is %s\n",this.cn,i);
             try {
+                System.out.printf("The counter #%s is %s\n",this.cn,i);            
                 Thread.sleep(313);
+                if (Thread.interrupted())
+                {
+                    throw new InterruptedException();
+                }
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
+                System.out.printf("The counter #%s is interrupted.\n",this.cn);
                 e.printStackTrace();
             }
         }
