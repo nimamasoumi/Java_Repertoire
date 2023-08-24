@@ -4,7 +4,7 @@ Programming conceptual Java codes for learners and enthusiasts.
 ![alt-text](https://github.com/nimamasoumi/Java_Repertoire/blob/main/java.jpeg?raw=true)
 
 
-# Usage and run the program #
+## Usage and run the program ##
 
 - Step 1:
   Compile the source codes into bytecode class files using Java Compiler (javac). For instance:
@@ -18,7 +18,7 @@ Programming conceptual Java codes for learners and enthusiasts.
   `java Test/Classing/AbsClassTest`
   
 
-# Remarks #
+## Remarks ##
 
 I am expanding my Java programming knowledge everyday. I create codes to showcase the concept in a comprehensible example. Following is the list of topics that I generated the exmaple codes:
 
