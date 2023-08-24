@@ -25,7 +25,7 @@ public class CountDown implements Runnable {
         {
             try {
                 System.out.printf("The counter #%s is %s\n",this.cn,i);            
-                Thread.sleep(313);
+                Thread.sleep(98);
                 if (Thread.interrupted())
                 {
                     throw new InterruptedException();
