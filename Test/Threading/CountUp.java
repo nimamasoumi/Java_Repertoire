@@ -1,9 +1,9 @@
 package Test.Threading;
 
-public class CountDown implements Runnable {
+public class CountUp implements Runnable {
     
     int cn;
-    public CountDown(int N)
+    public CountUp(int N)
     {
         cn =N;
     }
@@ -20,20 +20,19 @@ public class CountDown implements Runnable {
     
     public void run ()
     {
-        System.out.printf("The count down thread %s has started.\n",this.cn);
-        for (int i=num;i>0;i--)
+        System.out.printf("The count up thread %s has started.\n",this.cn);
+        for (int i=1;i<=num;i++)
         {
             try {
-                System.out.printf("The counter #%s is %s\n",this.cn,i);            
+                System.out.printf("The up counter #%s is %s\n",this.cn,i);            
                 Thread.sleep(101);
                 if (Thread.interrupted())
                 {
                     throw new InterruptedException();
                 }
             } catch (InterruptedException e) {
-                System.out.printf("The counter #%s is interrupted and stopped.\n",this.cn);
-                //e.printStackTrace();
-                return;
+                System.out.printf("The up counter #%s is interrupted.\n",this.cn);
+                e.printStackTrace();
             }
         }
     }
