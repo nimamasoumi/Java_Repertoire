@@ -1,12 +1,12 @@
-package Test.Threading;
+package Concepts.Threading;
 
-// Testing synchronization of threads and synchronized methods
-public class SyncThread {
+// Testing synchronization of threads
+public class AsyncThread {
 
     public static void main(String args[])
     {
         int N=19;
-        CountSync csy1 = new CountSync(N);
+        CountAsync csy1 = new CountAsync(N);
         // This thread counts down the number
         Thread t1 = (new Thread(new Runnable()
         {
@@ -36,13 +36,13 @@ public class SyncThread {
             }            
         }));
         t1.start();t2.start();
-        try{
-            t1.join();
-            t2.join();
-        }catch(InterruptedException e)
-        {
-            System.out.println("The threads have been interrupted.");
-        }             
+        // try{
+        //     t1.join();
+        //     t2.join();
+        // }catch(InterruptedException e)
+        // {
+        //     System.out.println("The threads have been interrupted.");
+        // }             
     }
     
 }

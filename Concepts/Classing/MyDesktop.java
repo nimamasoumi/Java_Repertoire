@@ -1,4 +1,4 @@
-package Test.Classing;
+package Concepts.Classing;
 
 public class MyDesktop extends MyComputer{
     int num_cpu = 6;

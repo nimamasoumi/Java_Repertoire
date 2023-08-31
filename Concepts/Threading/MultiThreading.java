@@ -1,4 +1,4 @@
-package Test.Threading;
+package Concepts.Threading;
 
 public class MultiThreading {
     public static void main(String args[])

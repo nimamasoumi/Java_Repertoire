@@ -1,4 +1,4 @@
-package Test.Classing;
+package Concepts.Classing;
 
 public interface IComputer {
     public void SetName(final String nm);

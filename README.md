@@ -9,13 +9,13 @@ Programming conceptual Java codes for learners and enthusiasts.
 - Step 1:
   Compile the source codes into bytecode class files using Java Compiler (javac). For instance:
   
-  `javac Test/Classing/*.java`
+  `javac Concepts/Classing/*.java`
   
   
 - Step 2:
   Run the code by starting the Java Runtime Environment (JRE). For instance:
   
-  `java Test/Classing/AbsClassTest`
+  `java Concepts/Classing/AbsClassTest`
   
 
 ## Remarks ##
@@ -25,5 +25,5 @@ I am expanding my Java programming knowledge everyday. I create codes to showcas
 1. Generic types in Java
 2. Abstract class, interfaces, and class inheritance
 3. Thread class, Multithreading, Runnable, interrupting, and join a thread.
-4. Synchronization of threads using the synchronized modifier for a method.
+4. Synchronization of threads using the synchronized modifier for a method and a statement.
 

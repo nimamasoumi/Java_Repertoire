@@ -1,4 +1,4 @@
-package Test.Classing;
+package Concepts.Classing;
 
 public class MyLaptop implements IComputer{
 

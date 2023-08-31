@@ -1,4 +1,4 @@
-public class test {
+public class GenericTypes {
 	public static void main(String[] args) {
 		System.out.println("Hello Java!");
 		System.out.println("To see if we need a new line.");
@@ -37,6 +37,11 @@ public class test {
 		int binVal = 0b111111;
 		double sciVal = 1.3e8;
 		long speedOfLight = 299_792_458; //representing a large number
+
+		ObjectType gt1 = new ObjectType();
+		gt1.CheckObj();
+		gt1.o1 = gt1;
+		gt1.CheckObj();
 
 		System.out.println("Name: " + name);
 		System.out.printf("Age: %s\n", age);
