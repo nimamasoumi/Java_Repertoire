@@ -26,4 +26,5 @@ I am expanding my Java programming knowledge everyday. I create codes to showcas
 2. Abstract class, interfaces, and class inheritance
 3. Thread class, Multithreading, Runnable, interrupting, and join a thread.
 4. Synchronization of threads using the synchronized modifier for a method and a statement.
+5. Concurrency of threads.
 
