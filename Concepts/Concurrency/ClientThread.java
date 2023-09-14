@@ -1,5 +1,7 @@
 package Concepts.Concurrency;
 
+import java.util.Arrays;
+
 public class ClientThread implements Runnable
 {
     private DataClientServer dataRT;
@@ -13,8 +15,8 @@ public class ClientThread implements Runnable
         for (int ii=0;ii<5;ii++)
         {
             double[] rt = dataRT.getParams();
-            System.out.println("The parameters are: ");
-            System.out.print(rt);
+            System.out.printf("Data %s is received. The parameters are: \n", ii+1);
+            System.out.print(Arrays.toString(rt));
             System.out.print("\n");
             try
             {
