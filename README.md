@@ -22,10 +22,11 @@ Programming conceptual Java codes for learners and enthusiasts.
 
 I am expanding my Java programming knowledge everyday. I create codes to showcase the concept in a comprehensible example. Following is the list of topics that I generated the exmaple codes:
 
-1. Generic types in Java
+1. Primitive types in Java
 2. Abstract class, interfaces, and class inheritance
 3. Thread class, Multithreading, Runnable, interrupting, and join a thread.
 4. Synchronization of threads using the synchronized modifier for a method and a statement.
 5. Concurrency of threads by managing the intrinsic/monitor lock, and using wait() then notifyAll() methods.
 6. Building a graphical user interface application
+7. Primitive arrays, List, ArrayList, and generic types
 
