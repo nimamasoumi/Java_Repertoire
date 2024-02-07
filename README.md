@@ -29,4 +29,5 @@ I am expanding my Java programming knowledge everyday. I create codes to showcas
 5. Concurrency of threads by managing the intrinsic/monitor lock, and using wait() then notifyAll() methods.
 6. Building a graphical user interface application
 7. Primitive arrays, List, ArrayList, and generic types
+8. Implementation of mathematical formulas using the java.lang.Math package
 
