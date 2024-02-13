@@ -76,15 +76,16 @@ public class PowerSum extends CubicSum
         double tSum=0, aSum = 0;
         while (kk<np+1)
         {
-            for(int ii=0; ii<=kk-1; ii++)
+            for(int ii=0; ii<kk; ii++)
             {
                 aSum += (this.fact(kk+1)/(this.fact(kk+1-ii)*this.fact(ii)))
                         *(double)ss.get(ii);
             }
             tSum = (Math.pow((double)_num+1,(double)kk+1)-1-aSum)/((double)kk+1);
             ss.add((long) tSum);
-            System.out.printf("\nIntermediate result: %d %d\n", kk, ss.get(kk));
+            //System.out.printf("\nIntermediate result: %d %f %d\n", kk, aSum, ss.get(kk));
             kk++;
+            aSum=0;
         }
 
         return ss.get(np).longValue();
