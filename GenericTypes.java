@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 public class GenericTypes {
 	public static void main(String[] args) {
 		System.out.println("Hello Java!");
@@ -43,6 +45,10 @@ public class GenericTypes {
 		gt1.o1 = gt1;
 		gt1.CheckObj();
 
+		Long num8=37L, num9 = 19L;
+		var o2=new Object();
+		BigInteger num10 = 23;
+
 		System.out.println("Name: " + name);
 		System.out.printf("Age: %s\n", age);
 		System.out.printf("Height: %s cm\n", height);
@@ -63,5 +69,12 @@ public class GenericTypes {
 		System.out.println(binVal);
 		System.out.println(sciVal);
 		System.out.printf("Speed of light is: %,d m/s\n", speedOfLight);
+
+		System.out.println(num8.getClass());
+		System.out.println(num8.getClass().getModifiers());
+		System.out.println(num9.getClass().getModifiers());
+		System.out.println(o2.getClass().getModifiers());
+		System.out.println(num8.getClass()==num9.getClass());
+		System.out.println(num9.getClass()==o2.getClass());
 	}	
 }
