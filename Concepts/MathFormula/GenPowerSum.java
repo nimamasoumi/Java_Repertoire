@@ -8,7 +8,7 @@
  import java.util.List;
  import java.util.ArrayList;
 
-public class GenPowerSum<T> {
+public class GenPowerSum<T extends Number> {
 
     /**
      * @param pp is the power in the summation
@@ -16,6 +16,8 @@ public class GenPowerSum<T> {
      */
     private long pp = 0;
     private long num = 0;
+
+    private T sample;
     
     public GenPowerSum(){}
 
@@ -30,6 +32,12 @@ public class GenPowerSum<T> {
     {
         this.num = _num;
         this.pp = _pp;
+    }
+    public GenPowerSum(long _num, long _pp, T _sample)
+    {
+        this.num = _num;
+        this.pp = _pp;
+        this.sample = _sample;
     }
     public long getPower()
     {
@@ -47,25 +55,25 @@ public class GenPowerSum<T> {
     {
         this.num=_num;
     }
-    public T accuNP(long _num, long _pp)
+    public Object accuNP(long _num, long _pp)
     {        
         long n = _num;
-        T ss=null;
-        while (n>0)
-        {
-            if (n==_num)
-            {
-                ss = (T) Math.pow((double) n,(double) _pp);
-            }
-            else
-            {
-                ss += (T) Math.pow((double) n,(double) _pp);
-            }            
+        Long ssL=0L;Double ssD;
+        var sMod = this.sample.getClass().getModifiers();        
+        
+        while (n>0){            
+            ssD = Math.pow((double) n,(double) _pp);
+            switch(sMod){
+                // Long class modifier 
+                case 17:
+                    ssL += ssD.longValue();                        
+                    break;
+            }               
             n--;
         }
-        return ss;
+        return ssL;
     }
-    public long accuNP()
+    public Object accuNP()
     {
         return accuNP(this.getNum(), this.getPower());        
     }
@@ -132,7 +140,8 @@ public class GenPowerSum<T> {
             return;
         }
 
-        var pSum = new PowerSum(n, p);
+        Long samp = 19L;
+        var pSum = new GenPowerSum<Long>(n, p, samp);
         System.out.printf("\nThe number and power are: %d and %d\n"+
         "The sum by accumulation is: %d\n"+ 
         "The sum using the closed form: %d\n",
