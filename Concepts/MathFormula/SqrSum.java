@@ -1,3 +1,4 @@
+package Concepts.MathFormula;
 public class SqrSum implements ISquareSum
 {
 	

@@ -1,3 +1,4 @@
+package Concepts.MathFormula;
 /**
  * Provides methods to calculate sum of natural numbers powered by a positive integer
  * The power can be greater than zero 

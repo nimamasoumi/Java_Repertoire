@@ -1,5 +1,3 @@
-import java.math.BigDecimal;
-
 /**
  * Calculation of Euler number e
  * The user may specify the desired precision
@@ -7,6 +5,9 @@ import java.math.BigDecimal;
  * the exponential function near 0
  * The values are calculate using Double and BigDecimal types
  */
+package Concepts.MathFormula;
+import java.math.BigDecimal;
+
 public class CalcEulerNum {
     
     private int precision =0;

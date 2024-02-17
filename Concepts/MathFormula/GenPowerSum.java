@@ -1,3 +1,4 @@
+package Concepts.MathFormula;
 /**
  * Generic type implementation of PowerSum class in this package
  * This class allows the calculations in BigDecimal, BigInteger, and Long

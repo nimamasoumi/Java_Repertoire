@@ -1,3 +1,4 @@
+package Concepts.MathFormula;
 public class NumSum implements INumberSum
 {
 	private long valN = 0L;

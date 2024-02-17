@@ -1,3 +1,4 @@
+package Concepts.MathFormula;
 public class CubicSum extends SqrSum
 {
 	public CubicSum(){};
