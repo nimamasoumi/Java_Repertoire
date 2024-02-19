@@ -47,7 +47,6 @@ public class GenericTypes {
 
 		Long num8=37L, num9 = 19L;
 		var o2=new Object();
-		BigInteger num10 = 23;
 
 		System.out.println("Name: " + name);
 		System.out.printf("Age: %s\n", age);
