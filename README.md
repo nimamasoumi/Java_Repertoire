@@ -30,4 +30,4 @@ I am expanding my Java programming knowledge everyday. I create codes to showcas
 6. Building a graphical user interface application
 7. Primitive arrays, List, ArrayList, and generic types
 8. Implementation of mathematical formulas using the java.lang.Math package
-
+9. Calculation of &pi; using BigDecimal with 1000 decimal points precision 
