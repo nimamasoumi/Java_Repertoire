@@ -1,6 +1,31 @@
 import java.math.BigInteger;
+import java.math.BigDecimal;
 
 public class GenericTypes {
+	
+	public GenericTypes(){};
+	
+	/**
+	 * Experimenting the arithmetic with double vs Double vs BigDecimal
+	 * The results shows that double and Double are not reliable options
+	 */
+	public void doubleVsBigDecimal(){
+		double a=0.3,b=0.2,c=0;
+		Double A=0.3,B=0.2,C=0.0;
+		var ad = BigDecimal.valueOf(a);
+		var bd = BigDecimal.valueOf(b);
+		var cd = ad.subtract(bd);
+		c = a-b;
+		C = A-B;
+		System.out.println("double results: ");
+		System.out.println(c);
+		System.out.println("Double results:");
+		System.out.println(C);
+		System.out.println("BigDecimal results:");
+		System.out.println(cd.toString());
+
+	}
+	
 	public static void main(String[] args) {
 		System.out.println("Hello Java!");
 		System.out.println("To see if we need a new line.");
@@ -75,5 +100,8 @@ public class GenericTypes {
 		System.out.println(o2.getClass().getModifiers());
 		System.out.println(num8.getClass()==num9.getClass());
 		System.out.println(num9.getClass()==o2.getClass());
+
+		var gTypes=new GenericTypes();
+		gTypes.doubleVsBigDecimal();
 	}	
 }
