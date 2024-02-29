@@ -7,6 +7,7 @@
  */
 package Concepts.MathFormula;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class CalcEulerNum {
     
@@ -44,12 +45,32 @@ public class CalcEulerNum {
         }
         return ss;   
     }
+
+    public BigDecimal factbd(int _n){
+        if(_n==0)
+        {
+            return BigDecimal.valueOf(1.0);
+        }        
+        var n=(double)_n;
+
+        // similar to new BigDecimal("1.0");
+        var mm = BigDecimal.valueOf(1.0);
+        mm.setScale(1000);
+        while (n>0)
+        {
+            mm = mm.multiply(BigDecimal.valueOf(n));
+            n=n-1;
+        }
+        return mm;
+    }
+
     public BigDecimal calcEbd(){
         int n = this.precision;
         var ss=new BigDecimal("0.0");
+        var nOne = BigDecimal.valueOf(1.0);
         ss.setScale(1000);
         while(n>-1){
-            ss = ss.add(new BigDecimal(1/fact(n)));
+            ss = ss.add(nOne.divide(factbd(n),1000, RoundingMode.DOWN));
             n--;
         }
         return ss;   
