@@ -1,4 +1,5 @@
 import java.math.BigInteger;
+import java.util.Arrays;
 import java.math.BigDecimal;
 
 public class GenericTypes {
@@ -103,5 +104,13 @@ public class GenericTypes {
 
 		var gTypes=new GenericTypes();
 		gTypes.doubleVsBigDecimal();
+
+		String str1 = "This is a test; to split the String;"+
+		"into byte data; and then use the delimiter; to get substrings";
+		byte[] data1 = str1.getBytes();
+		var line1 = new String(data1);
+		String[] message1 = line1.split(";");
+		System.out.println(Arrays.deepToString(message1));
+
 	}	
 }
